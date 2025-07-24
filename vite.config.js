@@ -8,6 +8,7 @@ import Components from 'unplugin-vue-components/vite'
 import Fonts from 'unplugin-fonts/vite'
 import Layouts from 'vite-plugin-vue-layouts'
 import VueRouter from 'unplugin-vue-router/vite'
+import {PrimeVueResolver} from '@primevue/auto-import-resolver';
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
@@ -15,7 +16,11 @@ export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
-    Components(),
+    Components({
+      resolvers: [
+        PrimeVueResolver()
+      ]
+    }),
     AutoImport({
       imports: [
         'vue',
