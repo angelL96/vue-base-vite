@@ -5,6 +5,7 @@ A production-ready Vue 3 base template built with modern tools and best practice
 ## ✨ Features
 
 - **Vue 3** - Latest version with Composition API and `<script setup>` syntax
+- **TypeScript** - Full TypeScript support with type safety and better DX
 - **Vite** - Fast build tool and development server
 - **PrimeVue** - Comprehensive UI component library and design system
 - **Tailwind CSS** - Utility-first CSS framework for rapid styling
@@ -49,20 +50,21 @@ src/
 │   └── default.vue     # Default application layout
 ├── pages/              # File-based routing pages
 ├── router/             # Router configuration
-│   └── index.js        # Main router setup
+│   └── index.ts        # Main router setup
 ├── stores/             # Pinia store modules
-│   └── index.js        # Store configuration
+│   └── index.ts        # Store configuration
 ├── styles/             # Global styles and CSS
 ├── utils/              # Utility functions
 │   └── axios.js        # Axios configuration
 ├── App.vue             # Root component
-└── main.js             # Application entry point
+└── main.ts             # Application entry point
 ```
 
 ## 🛠 Technologies Used
 
 ### Core Framework
 - **Vue 3** - Progressive JavaScript framework
+- **TypeScript** - Strongly typed programming language that builds on JavaScript
 - **Vite** - Next generation frontend tooling
 
 ### UI & Styling
@@ -179,7 +181,14 @@ VITE_APP_TITLE=My Vue App
 Modify `src/utils/axios.js` to configure API endpoints and interceptors.
 
 ### Router Configuration
-Customize routing behavior in `src/router/index.js`.
+Customize routing behavior in `src/router/index.ts`.
+
+### TypeScript Configuration
+The project includes comprehensive TypeScript support:
+- **Type Safety** - Catch errors at compile time
+- **Enhanced IDE Support** - Better autocompletion and refactoring
+- **Multiple Config Files** - Separate configs for app, node, and build tools
+- **Auto-imports** - Automatic type definitions for components and composables
 
 ## 🎯 Use as Base Template
 
