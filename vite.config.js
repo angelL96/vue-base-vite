@@ -14,6 +14,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
+    VueRouter(),
     vue(),
     vueDevTools(),
     Components({
@@ -31,7 +32,6 @@ export default defineConfig({
       },
       vueTemplate: true,
     }),
-    VueRouter(),
     Fonts(),
     Layouts(),
     tailwindcss(),
